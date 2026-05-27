@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: stockmarket_alce
+    schema: public
+    tables:
+      - name: commodities
+        description: "Tabela que contém dados históricos de commodities"
+        columns:
+          - name: date
+            description: "Data da observação"
+          - name: Close
+            description: "Preço de fechamento da commodity"
+          - name: simbolo
+            description: "Símbolo da commodity"
+
+models:
+  - name: stg_movimentacao
+    description: "Tabela de staging contendo o histórico de movimentações (compras e vendas) de commodities"
+    columns:
+      - name: data
+        description: "Data em que a movimentação foi realizada"
+      - name: simbolo
+        description: "Código/Símbolo identificador da commodity (ex: CL=F)"
+      - name: acao
+        description: "Tipo de operação realizada: buy (compra) ou sell (venda)"
+      - name: quantidade
+        description: "Volume/Quantidade de contratos movimentados"
