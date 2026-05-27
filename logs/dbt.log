@@ -1,0 +1,75 @@
+[0m15:01:44.367003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDCF6396A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDCC291310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDD1707C50>]}
+
+
+============================== 15:01:44.374353 | 6e848c9c-3026-46a0-b420-dd9243d2fc57 ==============================
+[0m15:01:44.374353 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m15:01:44.376689 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '../', 'invocation_command': 'dbt init', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:03:11.064325 [debug] [MainThread]: Starter project path: C:\PROGRAMACAO\stock-market-etl-pipeline\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:03:11.131375 [info ] [MainThread]: Setting up your profile.
+[0m15:04:32.797354 [info ] [MainThread]: Profile datawarehouse written to ..\profiles.yml using target's profile_template.yml and your supplied values.
+[0m15:04:32.865821 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m15:04:32.883202 [info ] [MainThread]: dbt version: 1.12.0-b1
+[0m15:04:32.885795 [info ] [MainThread]: python version: 3.13.13
+[0m15:04:32.886728 [info ] [MainThread]: python path: C:\PROGRAMACAO\stock-market-etl-pipeline\.venv\Scripts\python.exe
+[0m15:04:32.888665 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m15:04:33.054197 [info ] [MainThread]: Using profiles dir at ../
+[0m15:04:33.054740 [info ] [MainThread]: Using profiles.yml file at ../profiles.yml
+[0m15:04:33.055086 [info ] [MainThread]: Using dbt_project.yml file at C:\PROGRAMACAO\stock-market-etl-pipeline\datawarehouse\dbt_project.yml
+[0m15:04:33.056345 [info ] [MainThread]: adapter type: postgres
+[0m15:04:33.056668 [info ] [MainThread]: adapter version: 1.10.0
+[0m15:04:33.246870 [info ] [MainThread]: Configuration:
+[0m15:04:33.248426 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:04:33.248813 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:04:33.249215 [info ] [MainThread]: Required dependencies:
+[0m15:04:33.251020 [debug] [MainThread]: Executing "git --help"
+[0m15:04:33.466272 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:04:33.468857 [debug] [MainThread]: STDERR: "b''"
+[0m15:04:33.470320 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:04:33.470959 [info ] [MainThread]: Connection:
+[0m15:04:33.471321 [info ] [MainThread]:   host: dpg-d8bhvn3eo5us73apol00-a.virginia-postgres.render.com
+[0m15:04:33.471687 [info ] [MainThread]:   port: 5432
+[0m15:04:33.472082 [info ] [MainThread]:   user: stockadmin
+[0m15:04:33.472347 [info ] [MainThread]:   database: stockmarket_alce
+[0m15:04:33.472629 [info ] [MainThread]:   schema: public
+[0m15:04:33.472867 [info ] [MainThread]:   connect_timeout: 10
+[0m15:04:33.473206 [info ] [MainThread]:   role: None
+[0m15:04:33.473559 [info ] [MainThread]:   search_path: None
+[0m15:04:33.473874 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:04:33.474102 [info ] [MainThread]:   sslmode: None
+[0m15:04:33.474308 [info ] [MainThread]:   sslcert: None
+[0m15:04:33.474526 [info ] [MainThread]:   sslkey: None
+[0m15:04:33.474739 [info ] [MainThread]:   sslrootcert: None
+[0m15:04:33.474965 [info ] [MainThread]:   application_name: dbt
+[0m15:04:33.475168 [info ] [MainThread]:   retries: 1
+[0m15:04:33.477951 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:04:34.546526 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:04:34.769124 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:04:34.770136 [debug] [MainThread]: On debug: select 1 as id
+[0m15:04:34.770953 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:04:36.333321 [debug] [MainThread]: SQL status: SELECT 1 in 1.561 seconds
+[0m15:04:36.339100 [debug] [MainThread]: On debug: Close
+[0m15:04:36.342027 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:04:36.346191 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:04:36.354964 [info ] [MainThread]: Your new dbt project "datawarehouse" was created!
+Initialized new project in C:\PROGRAMACAO\stock-market-etl-pipeline\datawarehouse\datawarehouse
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:04:36.377283 [debug] [MainThread]: Command `dbt init` succeeded at 15:04:36.371774 after 172.51 seconds
+[0m15:04:36.382154 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:04:36.390573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDD1DEF100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDD05C3890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDD1DBB570>]}
+[0m15:04:36.397561 [debug] [MainThread]: Flushing usage events
+[0m15:04:39.150317 [debug] [MainThread]: An error was encountered while trying to flush usage events
