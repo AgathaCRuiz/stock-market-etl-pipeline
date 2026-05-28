@@ -14,8 +14,18 @@ sources:
           - name: simbolo
             description: "Símbolo da commodity"
 
-models:
-  - name: stg_movimentacao
+models: # 🌟 Apenas um bloco 'models' centralizando todos os seus modelos!
+  - name: stg_commodities
+    description: "Tabela de staging contendo os preços históricos tratados das commodities"
+    columns:
+      - name: data
+        description: "Data do fechamento do preço da commodity"
+      - name: valor_fechamento
+        description: "Preço de fechamento da commodity"
+      - name: simbolo
+        description: "Código/Símbolo identificador da commodity"
+
+  - name: stg_movimentacao_commodities
     description: "Tabela de staging contendo o histórico de movimentações (compras e vendas) de commodities"
     columns:
       - name: data
@@ -26,3 +36,21 @@ models:
         description: "Tipo de operação realizada: buy (compra) ou sell (venda)"
       - name: quantidade
         description: "Volume/Quantidade de contratos movimentados"
+
+  - name: dm_commodities
+    description: "{{ doc('contribuicao_e_models') }}" # 🌟 Puxando a sua documentação em Markdown perfeitamente!
+    columns:
+      - name: data
+        description: "Data consolidada da operação"
+      - name: simbolo
+        description: "Ticker do ativo"
+      - name: valor_fechamento
+        description: "Preço de fechamento do dia (pode ser nulo se não houver correspondência de datas)"
+      - name: acao
+        description: "Tipo de operação: buy ou sell"
+      - name: quantidade
+        description: "Quantidade total movimentada"
+      - name: valor
+        description: "Financeiro bruto calculado da operação"
+      - name: ganho
+        description: "Resultado financeiro (positivo para venda, negativo para compra)"
